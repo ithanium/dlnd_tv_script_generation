@@ -11786,7 +11786,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11817,7 +11817,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">view_sentence_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
@@ -11904,7 +11904,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -11919,7 +11919,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
     <span class="n">vocab</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
     <span class="n">vocab_to_int</span> <span class="o">=</span> <span class="p">{</span><span class="n">word</span><span class="p">:</span><span class="n">integer</span> <span class="k">for</span> <span class="n">integer</span><span class="p">,</span><span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">vocab</span><span class="p">)}</span>
     <span class="n">int_to_vocab</span> <span class="o">=</span> <span class="p">{</span><span class="n">integer</span><span class="p">:</span><span class="n">word</span> <span class="k">for</span> <span class="n">integer</span><span class="p">,</span><span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">vocab</span><span class="p">)}</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">vocab_to_int</span><span class="p">,</span> <span class="n">int_to_vocab</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">vocab_to_int</span><span class="p">,</span> <span class="n">int_to_vocab</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">DON&#39;T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE</span>
@@ -11974,7 +11974,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">token_lookup</span><span class="p">():</span>
@@ -12035,7 +12035,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12062,7 +12062,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12073,1028 +12073,9 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 <span class="kn">import</span> <span class="nn">problem_unittests</span> <span class="k">as</span> <span class="nn">tests</span>
 
 <span class="n">int_text</span><span class="p">,</span> <span class="n">vocab_to_int</span><span class="p">,</span> <span class="n">int_to_vocab</span><span class="p">,</span> <span class="n">token_dict</span> <span class="o">=</span> <span class="n">helper</span><span class="o">.</span><span class="n">load_preprocess</span><span class="p">()</span>
-<span class="n">int_to_vocab</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[7]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{0: &#39;dimly&#39;,
- 1: &#39;ees&#39;,
- 2: &#39;fixes&#39;,
- 3: &#39;bucks&#39;,
- 4: &#39;ails&#39;,
- 5: &#39;conditioning&#39;,
- 6: &#39;pleased&#39;,
- 7: &#39;badge&#39;,
- 8: &#39;cleaner&#39;,
- 9: &#34;you&#39;re&#34;,
- 10: &#39;slugger&#39;,
- 11: &#39;ding-a-ding-ding-a-ding-ding&#39;,
- 12: &#39;prison&#39;,
- 13: &#39;kahlua&#39;,
- 14: &#39;suspended&#39;,
- 15: &#39;sour&#39;,
- 16: &#39;hexa-&#39;,
- 17: &#39;threatening&#39;,
- 18: &#39;son-of-a&#39;,
- 19: &#39;exasperated&#39;,
- 20: &#39;executive&#39;,
- 21: &#39;slim&#39;,
- 22: &#39;cases&#39;,
- 23: &#39;vulnerable&#39;,
- 24: &#39;effigy&#39;,
- 25: &#39;effervescent&#39;,
- 26: &#39;burns&#39;,
- 27: &#39;falsetto&#39;,
- 28: &#39;limits&#39;,
- 29: &#39;year&#39;,
- 30: &#39;located&#39;,
- 31: &#39;bob&#39;,
- 32: &#39;everyday&#39;,
- 33: &#39;whatcha&#39;,
- 34: &#39;lindsay_naegle:&#39;,
- 35: &#34;grandmother&#39;s&#34;,
- 36: &#39;beach&#39;,
- 37: &#39;david_byrne:&#39;,
- 38: &#39;jack_larson:&#39;,
- 39: &#39;japanese&#39;,
- 40: &#39;alfred&#39;,
- 41: &#39;courthouse&#39;,
- 42: &#39;adeleine&#39;,
- 43: &#39;knees&#39;,
- 44: &#39;learn&#39;,
- 45: &#39;moments&#39;,
- 46: &#39;lumpa&#39;,
- 47: &#39;reluctant&#39;,
- 48: &#39;fica&#39;,
- 49: &#39;eighty-three&#39;,
- 50: &#39;difficult&#39;,
- 51: &#39;examines&#39;,
- 52: &#39;thrilled&#39;,
- 53: &#39;speaking&#39;,
- 54: &#39;champignons&#39;,
- 55: &#39;l&#39;,
- 56: &#39;blown&#39;,
- 57: &#39;exactly&#39;,
- 58: &#39;forgot&#39;,
- 59: &#39;reynolds&#39;,
- 60: &#39;handed&#39;,
- 61: &#39;done:&#39;,
- 62: &#39;recruiter&#39;,
- 63: &#39;mother&#39;,
- 64: &#39;stores&#39;,
- 65: &#39;of&#39;,
- 66: &#39;stuff&#39;,
- 67: &#39;yee-ha&#39;,
- 68: &#39;begging&#39;,
- 69: &#34;ladies&#39;&#34;,
- 70: &#39;victim&#39;,
- 71: &#39;reviews&#39;,
- 72: &#39;nicer&#39;,
- 73: &#39;sips&#39;,
- 74: &#39;lead&#39;,
- 75: &#39;dramatically&#39;,
- 76: &#39;beauty&#39;,
- 77: &#39;monster&#39;,
- 78: &#39;remembered&#39;,
- 79: &#39;pal&#39;,
- 80: &#39;write&#39;,
- 81: &#39;exit&#39;,
- 82: &#39;fast&#39;,
- 83: &#39;short&#39;,
- 84: &#39;tommy&#39;,
- 85: &#39;supposed&#39;,
- 86: &#39;hitchhike&#39;,
- 87: &#39;voters&#39;,
- 88: &#39;realized&#39;,
- 89: &#39;wholeheartedly&#39;,
- 90: &#39;lis&#39;,
- 91: &#39;8&#39;,
- 92: &#39;committing&#39;,
- 93: &#39;sausage&#39;,
- 94: &#39;whaaaa&#39;,
- 95: &#39;ground&#39;,
- 96: &#39;raccoons&#39;,
- 97: &#39;begins&#39;,
- 98: &#39;genius&#39;,
- 99: &#39;spit&#39;,
- 100: &#39;through&#39;,
- 101: &#39;public&#39;,
- 102: &#39;who&#39;,
- 103: &#39;johnny&#39;,
- 104: &#39;inflated&#39;,
- 105: &#39;hanh&#39;,
- 106: &#39;power&#39;,
- 107: &#39;streetcorner&#39;,
- 108: &#39;women&#39;,
- 109: &#39;served&#39;,
- 110: &#39;woo-hoo&#39;,
- 111: &#34;smokin&#39;_joe_frazier:&#34;,
- 112: &#39;edner&#39;,
- 113: &#39;introduce&#39;,
- 114: &#39;self-esteem&#39;,
- 115: &#39;hiring&#39;,
- 116: &#39;concentrate&#39;,
- 117: &#39;shores&#39;,
- 118: &#39;grandmother&#39;,
- 119: &#39;flaking&#39;,
- 120: &#39;boat&#39;,
- 121: &#39;wasting&#39;,
- 122: &#39;thoughtful&#39;,
- 123: &#39;door&#39;,
- 124: &#39;intense&#39;,
- 125: &#39;paid&#39;,
- 126: &#39;hardwood&#39;,
- 127: &#39;suave&#39;,
- 128: &#39;singer&#39;,
- 129: &#39;perfume&#39;,
- 130: &#39;swe-ee-ee-ee-eet&#39;,
- 131: &#39;frogs&#39;,
- 132: &#39;cost&#39;,
- 133: &#39;rather&#39;,
- 134: &#39;dearest&#39;,
- 135: &#39;insults&#39;,
- 136: &#34;smackin&#39;&#34;,
- 137: &#39;wolveriskey&#39;,
- 138: &#39;ruuuule&#39;,
- 139: &#39;brightening&#39;,
- 140: &#39;initially&#39;,
- 141: &#39;producers&#39;,
- 142: &#39;today/&#39;,
- 143: &#39;anger&#39;,
- 144: &#39;teen&#39;,
- 145: &#39;surgery&#39;,
- 146: &#39;emporium&#39;,
- 147: &#39;purse&#39;,
- 148: &#34;ain&#39;t&#34;,
- 149: &#39;shock&#39;,
- 150: &#39;times&#39;,
- 151: &#39;consciousness&#39;,
- 152: &#39;louisiana&#39;,
- 153: &#34;who&#39;da&#34;,
- 154: &#39;horns&#39;,
- 155: &#39;swimmers&#39;,
- 156: &#39;shopping&#39;,
- 157: &#39;wigs&#39;,
- 158: &#39;d&#39;,
- 159: &#39;clammy&#39;,
- 160: &#39;stock&#39;,
- 161: &#39;punkin&#39;,
- 162: &#39;road&#39;,
- 163: &#39;jets&#39;,
- 164: &#39;imaginary&#39;,
- 165: &#39;bully&#39;,
- 166: &#39;teenage&#39;,
- 167: &#39;crank&#39;,
- 168: &#39;marmaduke&#39;,
- 169: &#39;sixty-nine&#39;,
- 170: &#39;halloween&#39;,
- 171: &#39;indecipherable&#39;,
- 172: &#34;wearin&#39;&#34;,
- 173: &#39;frazier&#39;,
- 174: &#39;figures&#39;,
- 175: &#39;academy&#39;,
- 176: &#39;snide&#39;,
- 177: &#39;case&#39;,
- 178: &#39;sledge-hammer&#39;,
- 179: &#39;gabriel&#39;,
- 180: &#39;violations&#39;,
- 181: &#39;paying&#39;,
- 182: &#39;man_with_tree_hat:&#39;,
- 183: &#39;shortcomings&#39;,
- 184: &#39;assert&#39;,
- 185: &#39;fulla&#39;,
- 186: &#34;scammin&#39;&#34;,
- 187: &#39;aunt&#39;,
- 188: &#39;apart&#39;,
- 189: &#39;doctor&#39;,
- 190: &#39;donor&#39;,
- 191: &#39;frenchman&#39;,
- 192: &#39;ah-ha&#39;,
- 193: &#39;zinged&#39;,
- 194: &#39;sight&#39;,
- 195: &#39;woman:&#39;,
- 196: &#34;how&#39;d&#34;,
- 197: &#39;bathtub&#39;,
- 198: &#39;jacques:&#39;,
- 199: &#39;gay&#39;,
- 200: &#39;ointment&#39;,
- 201: &#39;outlook&#39;,
- 202: &#39;happily:&#39;,
- 203: &#39;conspiratorial&#39;,
- 204: &#39;emotion&#39;,
- 205: &#39;likes&#39;,
- 206: &#39;gluten&#39;,
- 207: &#39;rainier_wolfcastle:&#39;,
- 208: &#39;preparation&#39;,
- 209: &#39;uninhibited&#39;,
- 210: &#39;applesauce&#39;,
- 211: &#39;oak&#39;,
- 212: &#39;ooh&#39;,
- 213: &#39;here-here-here&#39;,
- 214: &#39;decision&#39;,
- 215: &#39;register&#39;,
- 216: &#39;smooth&#39;,
- 217: &#39;cannot&#39;,
- 218: &#39;priceless&#39;,
- 219: &#39;poisoning&#39;,
- 220: &#39;workers&#39;,
- 221: &#39;cecil_terwilliger:&#39;,
- 222: &#39;writing&#39;,
- 223: &#39;five&#39;,
- 224: &#39;movie&#39;,
- 225: &#39;watched&#39;,
- 226: &#39;ollie&#39;,
- 227: &#39;eva&#39;,
- 228: &#39;elmer&#39;,
- 229: &#39;rasputin&#39;,
- 230: &#39;himself&#39;,
- 231: &#39;exhale&#39;,
- 232: &#39;poured&#39;,
- 233: &#39;alpha-crow&#39;,
- 234: &#39;various&#39;,
- 235: &#39;lucinda&#39;,
- 236: &#39;duffman:&#39;,
- 237: &#39;murmur&#39;,
- 238: &#39;image&#39;,
- 239: &#39;acting&#39;,
- 240: &#39;loud&#39;,
- 241: &#39;find&#39;,
- 242: &#39;kidneys&#39;,
- 243: &#39;je&#39;,
- 244: &#39;alone&#39;,
- 245: &#34;&#39;topes&#34;,
- 246: &#39;cell&#39;,
- 247: &#39;t-shirt&#39;,
- 248: &#39;greedy&#39;,
- 249: &#39;ale&#39;,
- 250: &#39;ned&#39;,
- 251: &#39;bloodball&#39;,
- 252: &#39;best&#39;,
- 253: &#39;join&#39;,
- 254: &#39;bugs&#39;,
- 255: &#39;offensive&#39;,
- 256: &#39;exciting&#39;,
- 257: &#39;goo&#39;,
- 258: &#39;clandestine&#39;,
- 259: &#39;bounced&#39;,
- 260: &#39;wind&#39;,
- 261: &#39;friday&#39;,
- 262: &#39;wound&#39;,
- 263: &#39;jamaican&#39;,
- 264: &#39;celeste&#39;,
- 265: &#39;pernt&#39;,
- 266: &#39;male_singers:&#39;,
- 267: &#39;nose&#39;,
- 268: &#39;ninety-eight&#39;,
- 269: &#39;eco-fraud&#39;,
- 270: &#39;bonfire&#39;,
- 271: &#39;single-mindedness&#39;,
- 272: &#39;cartoons&#39;,
- 273: &#34;tester&#39;s&#34;,
- 274: &#39;bowled&#39;,
- 275: &#39;loneliness&#39;,
- 276: &#39;stop&#39;,
- 277: &#39;countryman&#39;,
- 278: &#39;mop&#39;,
- 279: &#39;faded&#39;,
- 280: &#39;jay:&#39;,
- 281: &#34;what&#39;d&#34;,
- 282: &#39;x-men&#39;,
- 283: &#39;bret&#39;,
- 284: &#39;sentimonies&#39;,
- 285: &#39;brilliant&#39;,
- 286: &#39;fired&#39;,
- 287: &#39;chin&#39;,
- 288: &#39;snotty&#39;,
- 289: &#39;guinea&#39;,
- 290: &#39;zeal&#39;,
- 291: &#39;moon-bounce&#39;,
- 292: &#39;cheer&#39;,
- 293: &#39;renee&#39;,
- 294: &#39;_zander:&#39;,
- 295: &#39;bless&#39;,
- 296: &#39;reaches&#39;,
- 297: &#39;goldarnit&#39;,
- 298: &#39;failed&#39;,
- 299: &#39;düffenbraus&#39;,
- 300: &#39;heavyset&#39;,
- 301: &#39;firing&#39;,
- 302: &#39;problemo&#39;,
- 303: &#34;y&#39;money&#39;s&#34;,
- 304: &#39;quimbys:&#39;,
- 305: &#34;carl&#39;s&#34;,
- 306: &#39;clinton&#39;,
- 307: &#39;director:&#39;,
- 308: &#39;droning&#39;,
- 309: &#39;peanuts&#39;,
- 310: &#39;nudge&#39;,
- 311: &#39;ralphie&#39;,
- 312: &#39;abolish&#39;,
- 313: &#39;travel&#39;,
- 314: &#39;bachelor&#39;,
- 315: &#39;says&#39;,
- 316: &#39;plum&#39;,
- 317: &#39;slobs&#39;,
- 318: &#39;joey_kramer:&#39;,
- 319: &#39;renee:&#39;,
- 320: &#39;brainiac&#39;,
- 321: &#39;cherry&#39;,
- 322: &#39;poulet&#39;,
- 323: &#39;stamp&#39;,
- 324: &#39;shill&#39;,
- 325: &#39;derisive&#39;,
- 326: &#39;cola&#39;,
- 327: &#39;powerful&#39;,
- 328: &#39;lenses&#39;,
- 329: &#39;pizza&#39;,
- 330: &#39;perhaps&#39;,
- 331: &#39;spanish&#39;,
- 332: &#39;choke&#39;,
- 333: &#39;program&#39;,
- 334: &#39;bon-bons&#39;,
- 335: &#39;lager&#39;,
- 336: &#39;myself&#39;,
- 337: &#39;rector&#39;,
- 338: &#39;pugilist&#39;,
- 339: &#39;ashamed&#39;,
- 340: &#39;taught&#39;,
- 341: &#39;unfair&#39;,
- 342: &#39;guess&#39;,
- 343: &#39;thinking&#39;,
- 344: &#39;patting&#39;,
- 345: &#39;malfeasance&#39;,
- 346: &#39;estranged&#39;,
- 347: &#39;disappointing&#39;,
- 348: &#39;parenting&#39;,
- 349: &#39;appendectomy&#39;,
- 350: &#39;sit&#39;,
- 351: &#39;voice_on_transmitter:&#39;,
- 352: &#39;edge&#39;,
- 353: &#39;cards&#39;,
- 354: &#39;shipment&#39;,
- 355: &#39;infestation&#39;,
- 356: &#39;eddie&#39;,
- 357: &#39;shark&#39;,
- 358: &#34;isn&#39;t&#34;,
- 359: &#39;football&#39;,
- 360: &#39;squishee&#39;,
- 361: &#39;lise:&#39;,
- 362: &#39;sanitary&#39;,
- 363: &#39;whistles&#39;,
- 364: &#39;killed&#39;,
- 365: &#39;lou&#39;,
- 366: &#39;crystal&#39;,
- 367: &#39;tie&#39;,
- 368: &#39;forever&#39;,
- 369: &#39;aggravated&#39;,
- 370: &#39;tape&#39;,
- 371: &#39;swig&#39;,
- 372: &#39;frontrunner&#39;,
- 373: &#34;smokin&#39;&#34;,
- 374: &#39;safe&#39;,
- 375: &#39;presently&#39;,
- 376: &#39;post-suicide&#39;,
- 377: &#39;drunkenly&#39;,
- 378: &#39;white_rabbit:&#39;,
- 379: &#39;few&#39;,
- 380: &#39;manjula&#39;,
- 381: &#39;situation&#39;,
- 382: &#39;weep&#39;,
- 383: &#39;bets&#39;,
- 384: &#39;muttering&#39;,
- 385: &#39;promised&#39;,
- 386: &#39;pre-columbian&#39;,
- 387: &#39;lindsay&#39;,
- 388: &#39;acronyms&#39;,
- 389: &#39;kisser&#39;,
- 390: &#39;fringe&#39;,
- 391: &#39;maya:&#39;,
- 392: &#39;bedtime&#39;,
- 393: &#39;meal&#39;,
- 394: &#34;how&#39;re&#34;,
- 395: &#39;rookie&#39;,
- 396: &#39;novel&#39;,
- 397: &#39;open&#39;,
- 398: &#39;putting&#39;,
- 399: &#34;they&#39;ve&#34;,
- 400: &#39;motor&#39;,
- 401: &#39;stats&#39;,
- 402: &#39;skeptical&#39;,
- 403: &#39;rage&#39;,
- 404: &#39;closing&#39;,
- 405: &#39;hippies&#39;,
- 406: &#39;sing-song&#39;,
- 407: &#39;wienerschnitzel&#39;,
- 408: &#39;occurrence&#39;,
- 409: &#39;fifteen&#39;,
- 410: &#39;washouts&#39;,
- 411: &#39;compressions&#39;,
- 412: &#34;i-i&#39;m&#34;,
- 413: &#34;breakin&#39;&#34;,
- 414: &#39;greatest&#39;,
- 415: &#39;dennis_conroy:&#39;,
- 416: &#39;agreement&#39;,
- 417: &#39;eww&#39;,
- 418: &#39;just&#39;,
- 419: &#39;quit&#39;,
- 420: &#39;remember&#39;,
- 421: &#39;oh-so-sophisticated&#39;,
- 422: &#39;bunch&#39;,
- 423: &#39;book&#39;,
- 424: &#39;kirk_van_houten:&#39;,
- 425: &#39;alter&#39;,
- 426: &#39;irishman&#39;,
- 427: &#39;table&#39;,
- 428: &#39;brace&#39;,
- 429: &#39;mole&#39;,
- 430: &#39;jeers&#39;,
- 431: &#39;vermont&#39;,
- 432: &#39;mint&#39;,
- 433: &#39;ripper&#39;,
- 434: &#39;cure&#39;,
- 435: &#39;should&#39;,
- 436: &#39;gonna&#39;,
- 437: &#39;helicopter&#39;,
- 438: &#39;hiya&#39;,
- 439: &#39;yammering&#39;,
- 440: &#39;choked&#39;,
- 441: &#39;suit&#39;,
- 442: &#39;dirge-like&#39;,
- 443: &#39;adjourned&#39;,
- 444: &#39;popping&#39;,
- 445: &#39;hunger&#39;,
- 446: &#39;over-pronouncing&#39;,
- 447: &#39;honest&#39;,
- 448: &#39;broke&#39;,
- 449: &#39;doing&#39;,
- 450: &#39;a&#39;,
- 451: &#39;mural&#39;,
- 452: &#39;temp&#39;,
- 453: &#39;accelerating&#39;,
- 454: &#39;stupidly&#39;,
- 455: &#39;lard&#39;,
- 456: &#39;kenny&#39;,
- 457: &#39;carnival&#39;,
- 458: &#39;floor&#39;,
- 459: &#39;thirty-nine&#39;,
- 460: &#39;oblivious&#39;,
- 461: &#39;lungs&#39;,
- 462: &#39;cologne&#39;,
- 463: &#39;confidence&#39;,
- 464: &#39;discriminate&#39;,
- 465: &#39;hare-brained&#39;,
- 466: &#39;eats&#39;,
- 467: &#39;burt&#39;,
- 468: &#39;here&#39;,
- 469: &#39;son&#39;,
- 470: &#39;jar&#39;,
- 471: &#39;children&#39;,
- 472: &#39;uses&#39;,
- 473: &#39;encouraged&#39;,
- 474: &#39;loved&#39;,
- 475: &#34;s&#39;okay&#34;,
- 476: &#39;pancakes&#39;,
- 477: &#39;celebrities&#39;,
- 478: &#34;drexel&#39;s&#34;,
- 479: &#39;turning&#39;,
- 480: &#39;everything&#39;,
- 481: &#39;aziz&#39;,
- 482: &#39;tab&#39;,
- 483: &#39;hopeful&#39;,
- 484: &#39;choices:&#39;,
- 485: &#39;chow&#39;,
- 486: &#34;fishin&#39;&#34;,
- 487: &#39;germans&#39;,
- 488: &#39;bleak&#39;,
- 489: &#39;specials&#39;,
- 490: &#39;everywhere&#39;,
- 491: &#34;changin&#39;&#34;,
- 492: &#39;||semicolon||&#39;,
- 493: &#39;simple&#39;,
- 494: &#39;enveloped&#39;,
- 495: &#39;twelveball&#39;,
- 496: &#39;depressant&#39;,
- 497: &#39;million&#39;,
- 498: &#39;then&#39;,
- 499: &#39;live&#39;,
- 500: &#39;backward&#39;,
- 501: &#39;german&#39;,
- 502: &#39;moe-ron&#39;,
- 503: &#39;nelson&#39;,
- 504: &#39;costume&#39;,
- 505: &#39;fourth&#39;,
- 506: &#39;alcoholism&#39;,
- 507: &#39;oughta&#39;,
- 508: &#39;celebrate&#39;,
- 509: &#39;farthest&#39;,
- 510: &#39;opens&#39;,
- 511: &#39;spy&#39;,
- 512: &#39;hunting&#39;,
- 513: &#39;compels&#39;,
- 514: &#39;cracked&#39;,
- 515: &#39;kim_basinger:&#39;,
- 516: &#39;experiments&#39;,
- 517: &#39;virility&#39;,
- 518: &#39;lucky&#39;,
- 519: &#39;playhouse&#39;,
- 520: &#39;housework&#39;,
- 521: &#39;spiritual&#39;,
- 522: &#34;school&#39;s&#34;,
- 523: &#39;advertise&#39;,
- 524: &#39;capitalists&#39;,
- 525: &#39;caper&#39;,
- 526: &#39;nards&#39;,
- 527: &#39;further&#39;,
- 528: &#39;something&#39;,
- 529: &#39;accepting&#39;,
- 530: &#39;snap&#39;,
- 531: &#39;thrown&#39;,
- 532: &#39;rickles&#39;,
- 533: &#39;law&#39;,
- 534: &#39;drinking:&#39;,
- 535: &#39;nemo&#39;,
- 536: &#39;spit-backs&#39;,
- 537: &#39;hammock&#39;,
- 538: &#39;jacks&#39;,
- 539: &#39;encores&#39;,
- 540: &#39;lock&#39;,
- 541: &#39;doll-baby&#39;,
- 542: &#39;buttocks&#39;,
- 543: &#39;fail&#39;,
- 544: &#39;switched&#39;,
- 545: &#39;sotto&#39;,
- 546: &#39;alphabet&#39;,
- 547: &#34;that&#39;s&#34;,
- 548: &#39;wake&#39;,
- 549: &#39;distraught&#39;,
- 550: &#39;minute&#39;,
- 551: &#39;strips&#39;,
- 552: &#39;contemplates&#39;,
- 553: &#39;courts&#39;,
- 554: &#39;shooting&#39;,
- 555: &#39;nuked&#39;,
- 556: &#39;escort&#39;,
- 557: &#39;bubbles-in-my-nose-y&#39;,
- 558: &#39;thought&#39;,
- 559: &#39;specific&#39;,
- 560: &#39;jigger&#39;,
- 561: &#39;heroism&#39;,
- 562: &#34;g&#39;night&#34;,
- 563: &#39;overhearing&#39;,
- 564: &#39;eaten&#39;,
- 565: &#39;y-you&#39;,
- 566: &#39;baseball&#39;,
- 567: &#39;lifts&#39;,
- 568: &#39;solved&#39;,
- 569: &#39;sandwich&#39;,
- 570: &#39;winch&#39;,
- 571: &#39;kl5-4796&#39;,
- 572: &#39;bits&#39;,
- 573: &#39;coma&#39;,
- 574: &#39;allow&#39;,
- 575: &#39;lucius:&#39;,
- 576: &#39;cranberry&#39;,
- 577: &#39;chase&#39;,
- 578: &#39;roof&#39;,
- 579: &#39;murmurs&#39;,
- 580: &#39;factor&#39;,
- 581: &#39;backing&#39;,
- 582: &#34;son&#39;s&#34;,
- 583: &#39;grade&#39;,
- 584: &#39;continued&#39;,
- 585: &#39;continuum&#39;,
- 586: &#39;jovial&#39;,
- 587: &#34;hole&#39;&#34;,
- 588: &#39;dime&#39;,
- 589: &#39;patrons&#39;,
- 590: &#39;deer&#39;,
- 591: &#39;clothespins&#39;,
- 592: &#39;slight&#39;,
- 593: &#39;statues&#39;,
- 594: &#39;refill&#39;,
- 595: &#39;aiden&#39;,
- 596: &#34;swishifyin&#39;&#34;,
- 597: &#34;comin&#39;&#34;,
- 598: &#39;flips&#39;,
- 599: &#39;gimmicks&#39;,
- 600: &#39;matter&#39;,
- 601: &#39;brothers&#39;,
- 602: &#39;photographer&#39;,
- 603: &#39;dryer&#39;,
- 604: &#39;fire&#39;,
- 605: &#39;k-zug&#39;,
- 606: &#39;rainier&#39;,
- 607: &#39;bide&#39;,
- 608: &#39;ease&#39;,
- 609: &#39;hmf&#39;,
- 610: &#39;african&#39;,
- 611: &#34;that&#39;d&#34;,
- 612: &#39;enabling&#39;,
- 613: &#39;dignified&#39;,
- 614: &#39;exited&#39;,
- 615: &#39;stink&#39;,
- 616: &#39;grunt&#39;,
- 617: &#39;neighbors&#39;,
- 618: &#39;regret&#39;,
- 619: &#39;powers&#39;,
- 620: &#39;sincere&#39;,
- 621: &#39;wore&#39;,
- 622: &#39;temple&#39;,
- 623: &#39;miss_lois_pennycandy:&#39;,
- 624: &#39;full-bodied&#39;,
- 625: &#39;dressing&#39;,
- 626: &#39;for&#39;,
- 627: &#39;hooky&#39;,
- 628: &#39;steinbrenner&#39;,
- 629: &#39;enjoy&#39;,
- 630: &#39;whaddaya&#39;,
- 631: &#39;working&#39;,
- 632: &#39;new_health_inspector:&#39;,
- 633: &#39;toms&#39;,
- 634: &#39;happy&#39;,
- 635: &#39;cash&#39;,
- 636: &#39;sighs&#39;,
- 637: &#39;trust&#39;,
- 638: &#39;swelling&#39;,
- 639: &#39;attractive&#39;,
- 640: &#39;fbi_agent:&#39;,
- 641: &#39;spotting&#39;,
- 642: &#39;contented&#39;,
- 643: &#39;eyes&#39;,
- 644: &#39;moonlight&#39;,
- 645: &#39;carny:&#39;,
- 646: &#39;stripes&#39;,
- 647: &#39;civilization&#39;,
- 648: &#39;reached&#39;,
- 649: &#39;challenge&#39;,
- 650: &#39;bellyaching&#39;,
- 651: &#39;flame&#39;,
- 652: &#39;trapped&#39;,
- 653: &#39;greetings&#39;,
- 654: &#39;statesmanlike&#39;,
- 655: &#39;stengel&#39;,
- 656: &#39;in-ground&#39;,
- 657: &#39;all&#39;,
- 658: &#39;proudly&#39;,
- 659: &#39;sealed&#39;,
- 660: &#39;pity&#39;,
- 661: &#39;magnanimous&#39;,
- 662: &#39;albeit&#39;,
- 663: &#39;mayor_joe_quimby:&#39;,
- 664: &#39;reserved&#39;,
- 665: &#39;stevie&#39;,
- 666: &#39;lemme&#39;,
- 667: &#39;fox_mulder:&#39;,
- 668: &#39;cameras&#39;,
- 669: &#39;cooker&#39;,
- 670: &#34;world&#39;s&#34;,
- 671: &#39;yeah&#39;,
- 672: &#39;glen:&#39;,
- 673: &#39;compliment&#39;,
- 674: &#39;up&#39;,
- 675: &#39;universe&#39;,
- 676: &#39;||left_parentheses||&#39;,
- 677: &#39;anywhere&#39;,
- 678: &#39;annoying&#39;,
- 679: &#39;ivy-covered&#39;,
- 680: &#39;liquor&#39;,
- 681: &#34;speakin&#39;&#34;,
- 682: &#39;long&#39;,
- 683: &#39;intrigued&#39;,
- 684: &#39;gore&#39;,
- 685: &#39;tick&#39;,
- 686: &#39;captain:&#39;,
- 687: &#39;cocks&#39;,
- 688: &#39;snatch&#39;,
- 689: &#39;alfalfa&#39;,
- 690: &#39;meeting&#39;,
- 691: &#39;lib&#39;,
- 692: &#39;norway&#39;,
- 693: &#39;studio&#39;,
- 694: &#34;springfield&#39;s&#34;,
- 695: &#39;sickened&#39;,
- 696: &#39;mayan&#39;,
- 697: &#39;combines&#39;,
- 698: &#39;passports&#39;,
- 699: &#39;strong&#39;,
- 700: &#39;stole&#39;,
- 701: &#39;text&#39;,
- 702: &#39;drollery&#39;,
- 703: &#39;barney_gumble:&#39;,
- 704: &#39;alcohol&#39;,
- 705: &#39;bottom&#39;,
- 706: &#39;media&#39;,
- 707: &#39;seven&#39;,
- 708: &#39;stiffening&#39;,
- 709: &#39;unintelligent&#39;,
- 710: &#39;appealing&#39;,
- 711: &#39;crummy&#39;,
- 712: &#39;americans&#39;,
- 713: &#39;aw&#39;,
- 714: &#39;ambrose&#39;,
- 715: &#39;muslim&#39;,
- 716: &#39;youngsters&#39;,
- 717: &#39;starts&#39;,
- 718: &#39;pause&#39;,
- 719: &#34;ball&#39;s&#34;,
- 720: &#39;texan&#39;,
- 721: &#39;whoopi&#39;,
- 722: &#39;lee&#39;,
- 723: &#39;mexican&#39;,
- 724: &#39;faint&#39;,
- 725: &#39;election&#39;,
- 726: &#39;heard&#39;,
- 727: &#39;duff&#39;,
- 728: &#39;reporter:&#39;,
- 729: &#39;parked&#39;,
- 730: &#39;information&#39;,
- 731: &#39;crew&#39;,
- 732: &#39;loan&#39;,
- 733: &#39;produce&#39;,
- 734: &#39;kinds&#39;,
- 735: &#39;till&#39;,
- 736: &#39;means&#39;,
- 737: &#39;plants&#39;,
- 738: &#39;duffed&#39;,
- 739: &#39;triangle&#39;,
- 740: &#39;ruint&#39;,
- 741: &#39;brains&#39;,
- 742: &#39;apology&#39;,
- 743: &#39;sponsor&#39;,
- 744: &#39;pool&#39;,
- 745: &#39;calendars&#39;,
- 746: &#39;homesick&#39;,
- 747: &#39;evasive&#39;,
- 748: &#34;tab&#39;s&#34;,
- 749: &#39;scrubbing&#39;,
- 750: &#39;sieben-gruben&#39;,
- 751: &#39;libraries&#39;,
- 752: &#39;website&#39;,
- 753: &#39;thirsty&#39;,
- 754: &#39;noosey&#39;,
- 755: &#39;get&#39;,
- 756: &#39;wiggum&#39;,
- 757: &#39;self-made&#39;,
- 758: &#39;became&#39;,
- 759: &#39;tenor:&#39;,
- 760: &#39;lush&#39;,
- 761: &#39;infiltrate&#39;,
- 762: &#39;simplest&#39;,
- 763: &#39;forty-five&#39;,
- 764: &#39;de-scramble&#39;,
- 765: &#39;exquisite&#39;,
- 766: &#34;round&#39;s&#34;,
- 767: &#39;took&#39;,
- 768: &#39;regulations&#39;,
- 769: &#39;macaulay&#39;,
- 770: &#39;thirty-thousand&#39;,
- 771: &#39;drinker&#39;,
- 772: &#39;influence&#39;,
- 773: &#39;binoculars&#39;,
- 774: &#39;items&#39;,
- 775: &#39;concerned&#39;,
- 776: &#39;albert&#39;,
- 777: &#39;prohibit&#39;,
- 778: &#39;towed&#39;,
- 779: &#39;military&#39;,
- 780: &#39;mac-who&#39;,
- 781: &#39;holy&#39;,
- 782: &#39;mistake&#39;,
- 783: &#39;prettied&#39;,
- 784: &#34;cupid&#39;s&#34;,
- 785: &#39;tight&#39;,
- 786: &#39;looks&#39;,
- 787: &#39;present&#39;,
- 788: &#39;death&#39;,
- 789: &#39;malted&#39;,
- 790: &#39;gary:&#39;,
- 791: &#39;nervous&#39;,
- 792: &#39;hand&#39;,
- 793: &#39;ends&#39;,
- 794: &#34;children&#39;s&#34;,
- 795: &#39;platinum&#39;,
- 796: &#39;know&#39;,
- 797: &#39;sick&#39;,
- 798: &#39;unjustly&#39;,
- 799: &#39;agents&#39;,
- 800: &#39;imported-sounding&#39;,
- 801: &#39;lobster-based&#39;,
- 802: &#39;incredulous&#39;,
- 803: &#39;chicks&#39;,
- 804: &#39;wade_boggs:&#39;,
- 805: &#39;drummer&#39;,
- 806: &#39;bar:&#39;,
- 807: &#39;elite&#39;,
- 808: &#39;margarita&#39;,
- 809: &#39;tidy&#39;,
- 810: &#39;ton&#39;,
- 811: &#39;bachelorette&#39;,
- 812: &#39;if&#39;,
- 813: &#39;painting&#39;,
- 814: &#39;motorcycle&#39;,
- 815: &#34;thing&#39;s&#34;,
- 816: &#34;lisa&#39;s&#34;,
- 817: &#39;stretch&#39;,
- 818: &#39;cozies&#39;,
- 819: &#39;dee-fense&#39;,
- 820: &#39;traitors&#39;,
- 821: &#39;husband&#39;,
- 822: &#39;wittgenstein&#39;,
- 823: &#39;hungry&#39;,
- 824: &#39;fad&#39;,
- 825: &#39;horrible&#39;,
- 826: &#39;soup&#39;,
- 827: &#39;without:&#39;,
- 828: &#39;glad&#39;,
- 829: &#39;environment&#39;,
- 830: &#39;jam&#39;,
- 831: &#39;ridiculous&#39;,
- 832: &#39;blokes&#39;,
- 833: &#39;der&#39;,
- 834: &#39;thnord&#39;,
- 835: &#39;every&#39;,
- 836: &#39;250&#39;,
- 837: &#34;blowin&#39;&#34;,
- 838: &#39;wally:&#39;,
- 839: &#39;but&#39;,
- 840: &#39;smoothly&#39;,
- 841: &#39;brunswick&#39;,
- 842: &#39;bow&#39;,
- 843: &#39;competitive&#39;,
- 844: &#39;dads&#39;,
- 845: &#39;dumb-asses&#39;,
- 846: &#39;watt&#39;,
- 847: &#39;connor-politan&#39;,
- 848: &#39;olive&#39;,
- 849: &#39;harvey&#39;,
- 850: &#39;congratulations&#39;,
- 851: &#39;bullet-proof&#39;,
- 852: &#39;raking&#39;,
- 853: &#39;ignoring&#39;,
- 854: &#39;hushed&#39;,
- 855: &#39;scream&#39;,
- 856: &#39;lover&#39;,
- 857: &#39;court&#39;,
- 858: &#39;aged&#39;,
- 859: &#39;toledo&#39;,
- 860: &#39;half-beer&#39;,
- 861: &#39;couch&#39;,
- 862: &#39;punching&#39;,
- 863: &#39;woman&#39;,
- 864: &#39;aims&#39;,
- 865: &#39;sobriety&#39;,
- 866: &#39;baloney&#39;,
- 867: &#39;mamma&#39;,
- 868: &#39;reaction&#39;,
- 869: &#39;chinese_restaurateur:&#39;,
- 870: &#39;gus&#39;,
- 871: &#39;lessee&#39;,
- 872: &#39;beefs&#39;,
- 873: &#39;sheets&#39;,
- 874: &#39;results&#39;,
- 875: &#39;build&#39;,
- 876: &#39;mall&#39;,
- 877: &#39;duff_announcer:&#39;,
- 878: &#39;hats&#39;,
- 879: &#39;looooooooooooooooooong&#39;,
- 880: &#34;it&#39;d&#34;,
- 881: &#39;handwriting&#39;,
- 882: &#39;incognito&#39;,
- 883: &#39;anderson&#39;,
- 884: &#39;sobbing&#39;,
- 885: &#39;paris&#39;,
- 886: &#39;kay&#39;,
- 887: &#39;ne&#39;,
- 888: &#39;brave&#39;,
- 889: &#39;needs&#39;,
- 890: &#39;stirrers&#39;,
- 891: &#39;sobs&#39;,
- 892: &#39;strawberry&#39;,
- 893: &#39;italian&#39;,
- 894: &#39;joint&#39;,
- 895: &#39;half&#39;,
- 896: &#39;completely&#39;,
- 897: &#39;never&#39;,
- 898: &#39;flat&#39;,
- 899: &#39;apu&#39;,
- 900: &#39;glasses&#39;,
- 901: &#39;eightball&#39;,
- 902: &#39;poster&#39;,
- 903: &#39;skydiving&#39;,
- 904: &#34;donatin&#39;&#34;,
- 905: &#39;thanking&#39;,
- 906: &#39;plant&#39;,
- 907: &#39;thousand-year&#39;,
- 908: &#39;life-threatening&#39;,
- 909: &#34;tinklin&#39;&#34;,
- 910: &#39;sinkhole&#39;,
- 911: &#39;lofty&#39;,
- 912: &#39;permitting&#39;,
- 913: &#39;rancid&#39;,
- 914: &#39;sign&#39;,
- 915: &#39;hispanic_crowd:&#39;,
- 916: &#39;ronstadt&#39;,
- 917: &#39;index&#39;,
- 918: &#39;aggravazes&#39;,
- 919: &#39;shelbyville&#39;,
- 920: &#39;endorsed&#39;,
- 921: &#39;lifters&#39;,
- 922: &#39;pronounce&#39;,
- 923: &#34;lookin&#39;&#34;,
- 924: &#39;squadron&#39;,
- 925: &#39;wagering&#39;,
- 926: &#39;thank&#39;,
- 927: &#39;freely&#39;,
- 928: &#39;grocery&#39;,
- 929: &#39;sweet&#39;,
- 930: &#39;coins&#39;,
- 931: &#39;wraps&#39;,
- 932: &#39;slab&#39;,
- 933: &#39;curse&#39;,
- 934: &#39;meals&#39;,
- 935: &#34;&#39;ceptin&#39;&#34;,
- 936: &#39;mariah&#39;,
- 937: &#39;sadistic_barfly:&#39;,
- 938: &#39;wrap&#39;,
- 939: &#39;gun&#39;,
- 940: &#39;super-genius&#39;,
- 941: &#39;sacrilicious&#39;,
- 942: &#39;duffman&#39;,
- 943: &#39;cock&#39;,
- 944: &#39;retain&#39;,
- 945: &#39;reconsidering&#39;,
- 946: &#39;amber&#39;,
- 947: &#39;invited&#39;,
- 948: &#39;mindless&#39;,
- 949: &#39;figure&#39;,
- 950: &#39;manchego&#39;,
- 951: &#39;resenting&#39;,
- 952: &#39;hiding&#39;,
- 953: &#39;bulked&#39;,
- 954: &#39;homer_simpson:&#39;,
- 955: &#39;bee&#39;,
- 956: &#39;coughs&#39;,
- 957: &#39;bars&#39;,
- 958: &#39;superdad&#39;,
- 959: &#39;phrase&#39;,
- 960: &#39;train&#39;,
- 961: &#39;iddilies&#39;,
- 962: &#39;wing&#39;,
- 963: &#39;champion&#39;,
- 964: &#39;terminated&#39;,
- 965: &#34;&#39;round&#34;,
- 966: &#39;presentable&#39;,
- 967: &#39;tourist&#39;,
- 968: &#39;delightfully&#39;,
- 969: &#39;museum&#39;,
- 970: &#39;monday&#39;,
- 971: &#39;male_inspector:&#39;,
- 972: &#39;ned_flanders:&#39;,
- 973: &#39;rhyme&#39;,
- 974: &#39;kirk_voice_milhouse:&#39;,
- 975: &#39;steal&#39;,
- 976: &#39;night-crawlers&#39;,
- 977: &#39;fridge&#39;,
- 978: &#39;bumbling&#39;,
- 979: &#39;pilsner-pusher&#39;,
- 980: &#39;flower&#39;,
- 981: &#39;lessons&#39;,
- 982: &#39;much&#39;,
- 983: &#39;regulars&#39;,
- 984: &#39;squeals&#39;,
- 985: &#39;decide:&#39;,
- 986: &#34;jackpot&#39;s&#34;,
- 987: &#39;yuh-huh&#39;,
- 988: &#39;feel&#39;,
- 989: &#39;cueball&#39;,
- 990: &#34;there&#39;s&#34;,
- 991: &#39;sugar-me-do&#39;,
- 992: &#39;developed&#39;,
- 993: &#39;activity&#39;,
- 994: &#39;passenger&#39;,
- 995: &#39;abusive&#39;,
- 996: &#39;faiths&#39;,
- 997: &#39;grab&#39;,
- 998: &#39;raging&#39;,
- 999: &#39;dana_scully:&#39;,
- ...}</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13119,7 +12100,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13180,7 +12161,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_inputs</span><span class="p">():</span>
@@ -13242,7 +12223,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_init_cell</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">):</span>
@@ -13299,7 +12280,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_embed</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">):</span>
@@ -13362,7 +12343,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_rnn</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">inputs</span><span class="p">):</span>
@@ -13423,7 +12404,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_nn</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">,</span> <span class="n">input_data</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">):</span>
@@ -13439,10 +12420,10 @@ Default GPU Device: /gpu:0
     <span class="n">embedded</span> <span class="o">=</span> <span class="n">get_embed</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">)</span>
     <span class="n">outputs</span><span class="p">,</span> <span class="n">final_state</span> <span class="o">=</span> <span class="n">build_rnn</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">embedded</span><span class="p">)</span>
     <span class="n">logits</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">fully_connected</span><span class="p">(</span>
-        <span class="n">inputs</span> <span class="o">=</span> <span class="n">outputs</span><span class="p">,</span>\
-        <span class="n">num_outputs</span> <span class="o">=</span> <span class="n">vocab_size</span><span class="p">,</span>\
-        <span class="n">activation_fn</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>\
-        <span class="n">weights_initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">truncated_normal_initializer</span><span class="p">(</span><span class="n">stddev</span><span class="o">=</span> <span class="mf">0.1</span><span class="p">),</span>\
+        <span class="n">inputs</span> <span class="o">=</span> <span class="n">outputs</span><span class="p">,</span>
+        <span class="n">num_outputs</span> <span class="o">=</span> <span class="n">vocab_size</span><span class="p">,</span>
+        <span class="n">activation_fn</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">weights_initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">truncated_normal_initializer</span><span class="p">(</span><span class="n">stddev</span><span class="o">=</span> <span class="mf">0.1</span><span class="p">),</span>
         <span class="n">biases_initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros_initializer</span><span class="p">())</span>
 
     <span class="k">return</span> <span class="n">logits</span><span class="p">,</span> <span class="n">final_state</span>
@@ -13520,7 +12501,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_batches</span><span class="p">(</span><span class="n">int_text</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_length</span><span class="p">):</span>
@@ -13531,18 +12512,17 @@ Default GPU Device: /gpu:0
 <span class="sd">    :param seq_length: The length of sequence</span>
 <span class="sd">    :return: Batches as a Numpy array</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">n_batches</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">int_text</span><span class="p">)</span> <span class="o">//</span> <span class="p">(</span><span class="n">batch_size</span> <span class="o">*</span> <span class="n">seq_length</span><span class="p">)</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n_batches</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_length</span><span class="p">))</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_batches</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">batch_size</span><span class="p">):</span>
-            <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">int_text</span><span class="p">[</span><span class="n">seq_length</span><span class="o">*</span><span class="p">(</span><span class="n">n_batches</span><span class="o">*</span><span class="n">j</span><span class="o">+</span><span class="n">i</span><span class="p">)</span>   <span class="p">:</span> <span class="n">seq_length</span><span class="o">*</span><span class="p">(</span><span class="n">n_batches</span><span class="o">*</span><span class="n">j</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-            <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">int_text</span><span class="p">[</span><span class="n">seq_length</span><span class="o">*</span><span class="p">(</span><span class="n">n_batches</span><span class="o">*</span><span class="n">j</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span> <span class="p">:</span> <span class="n">seq_length</span><span class="o">*</span><span class="p">(</span><span class="n">n_batches</span><span class="o">*</span><span class="n">j</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">n_batches</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">int_text</span><span class="p">)</span><span class="o">//</span><span class="p">(</span><span class="n">batch_size</span><span class="o">*</span><span class="n">seq_length</span><span class="p">)</span>
+    <span class="n">inputs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">int_text</span><span class="p">[:</span><span class="n">n_batches</span><span class="o">*</span><span class="p">(</span><span class="n">batch_size</span><span class="o">*</span><span class="n">seq_length</span><span class="p">)])</span>
+    <span class="n">targets</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">int_text</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">n_batches</span><span class="o">*</span><span class="p">(</span><span class="n">batch_size</span><span class="o">*</span><span class="n">seq_length</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">input_batches</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">inputs</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">n_batches</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">target_batches</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">targets</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">n_batches</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
     
-    <span class="n">result</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">targets</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">inputs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     
-    <span class="k">return</span> <span class="n">result</span>
-
+    <span class="n">output</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">input_batches</span><span class="p">,</span> <span class="n">target_batches</span><span class="p">)))</span>
+    
+    <span class="k">return</span> <span class="n">output</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">DON&#39;T MODIFY ANYTHING IN THIS CELL THAT IS BELOW THIS LINE</span>
@@ -13592,7 +12572,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Number of Epochs</span>
@@ -13602,9 +12582,9 @@ Default GPU Device: /gpu:0
 <span class="c1"># RNN Size</span>
 <span class="n">rnn_size</span> <span class="o">=</span> <span class="mi">256</span>
 <span class="c1"># Embedding Dimension Size</span>
-<span class="n">embed_dim</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">embed_dim</span> <span class="o">=</span> <span class="mi">256</span>
 <span class="c1"># Sequence Length</span>
-<span class="n">seq_length</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">seq_length</span> <span class="o">=</span> <span class="mi">30</span>
 <span class="c1"># Learning Rate</span>
 <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.01</span>
 <span class="c1"># Show stats for every n number of batches</span>
@@ -13633,7 +12613,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13684,7 +12664,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13732,110 +12712,74 @@ Default GPU Device: /gpu:0
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Epoch   0 Batch    0/26   train_loss = 8.848
-Epoch   0 Batch   25/26   train_loss = 5.199
-Epoch   1 Batch   24/26   train_loss = 4.508
-Epoch   2 Batch   23/26   train_loss = 4.079
-Epoch   3 Batch   22/26   train_loss = 3.534
-Epoch   4 Batch   21/26   train_loss = 3.134
-Epoch   5 Batch   20/26   train_loss = 2.807
-Epoch   6 Batch   19/26   train_loss = 2.527
-Epoch   7 Batch   18/26   train_loss = 2.287
-Epoch   8 Batch   17/26   train_loss = 1.984
-Epoch   9 Batch   16/26   train_loss = 1.871
-Epoch  10 Batch   15/26   train_loss = 1.671
-Epoch  11 Batch   14/26   train_loss = 1.470
-Epoch  12 Batch   13/26   train_loss = 1.325
-Epoch  13 Batch   12/26   train_loss = 1.157
-Epoch  14 Batch   11/26   train_loss = 1.118
-Epoch  15 Batch   10/26   train_loss = 1.035
-Epoch  16 Batch    9/26   train_loss = 0.890
-Epoch  17 Batch    8/26   train_loss = 0.871
-Epoch  18 Batch    7/26   train_loss = 0.726
-Epoch  19 Batch    6/26   train_loss = 0.688
-Epoch  20 Batch    5/26   train_loss = 0.708
-Epoch  21 Batch    4/26   train_loss = 0.614
-Epoch  22 Batch    3/26   train_loss = 0.594
-Epoch  23 Batch    2/26   train_loss = 0.535
-Epoch  24 Batch    1/26   train_loss = 0.515
-Epoch  25 Batch    0/26   train_loss = 0.482
-Epoch  25 Batch   25/26   train_loss = 0.468
-Epoch  26 Batch   24/26   train_loss = 0.383
-Epoch  27 Batch   23/26   train_loss = 0.361
-Epoch  28 Batch   22/26   train_loss = 0.371
-Epoch  29 Batch   21/26   train_loss = 0.341
-Epoch  30 Batch   20/26   train_loss = 0.300
-Epoch  31 Batch   19/26   train_loss = 0.268
-Epoch  32 Batch   18/26   train_loss = 0.253
-Epoch  33 Batch   17/26   train_loss = 0.254
-Epoch  34 Batch   16/26   train_loss = 0.246
-Epoch  35 Batch   15/26   train_loss = 0.221
-Epoch  36 Batch   14/26   train_loss = 0.219
-Epoch  37 Batch   13/26   train_loss = 0.173
-Epoch  38 Batch   12/26   train_loss = 0.177
-Epoch  39 Batch   11/26   train_loss = 0.196
-Epoch  40 Batch   10/26   train_loss = 0.199
-Epoch  41 Batch    9/26   train_loss = 0.169
-Epoch  42 Batch    8/26   train_loss = 0.174
-Epoch  43 Batch    7/26   train_loss = 0.181
-Epoch  44 Batch    6/26   train_loss = 0.167
-Epoch  45 Batch    5/26   train_loss = 0.159
-Epoch  46 Batch    4/26   train_loss = 0.158
-Epoch  47 Batch    3/26   train_loss = 0.170
-Epoch  48 Batch    2/26   train_loss = 0.165
-Epoch  49 Batch    1/26   train_loss = 0.172
-Epoch  50 Batch    0/26   train_loss = 0.161
-Epoch  50 Batch   25/26   train_loss = 0.164
-Epoch  51 Batch   24/26   train_loss = 0.144
-Epoch  52 Batch   23/26   train_loss = 0.157
-Epoch  53 Batch   22/26   train_loss = 0.170
-Epoch  54 Batch   21/26   train_loss = 0.178
-Epoch  55 Batch   20/26   train_loss = 0.164
-Epoch  56 Batch   19/26   train_loss = 0.154
-Epoch  57 Batch   18/26   train_loss = 0.156
-Epoch  58 Batch   17/26   train_loss = 0.157
-Epoch  59 Batch   16/26   train_loss = 0.172
-Epoch  60 Batch   15/26   train_loss = 0.159
-Epoch  61 Batch   14/26   train_loss = 0.167
-Epoch  62 Batch   13/26   train_loss = 0.136
-Epoch  63 Batch   12/26   train_loss = 0.151
-Epoch  64 Batch   11/26   train_loss = 0.172
-Epoch  65 Batch   10/26   train_loss = 0.172
-Epoch  66 Batch    9/26   train_loss = 0.151
-Epoch  67 Batch    8/26   train_loss = 0.158
-Epoch  68 Batch    7/26   train_loss = 0.168
-Epoch  69 Batch    6/26   train_loss = 0.156
-Epoch  70 Batch    5/26   train_loss = 0.148
-Epoch  71 Batch    4/26   train_loss = 0.149
-Epoch  72 Batch    3/26   train_loss = 0.161
-Epoch  73 Batch    2/26   train_loss = 0.160
-Epoch  74 Batch    1/26   train_loss = 0.165
-Epoch  75 Batch    0/26   train_loss = 0.156
-Epoch  75 Batch   25/26   train_loss = 0.158
-Epoch  76 Batch   24/26   train_loss = 0.139
-Epoch  77 Batch   23/26   train_loss = 0.154
-Epoch  78 Batch   22/26   train_loss = 0.165
-Epoch  79 Batch   21/26   train_loss = 0.174
-Epoch  80 Batch   20/26   train_loss = 0.159
-Epoch  81 Batch   19/26   train_loss = 0.151
-Epoch  82 Batch   18/26   train_loss = 0.153
-Epoch  83 Batch   17/26   train_loss = 0.153
-Epoch  84 Batch   16/26   train_loss = 0.170
-Epoch  85 Batch   15/26   train_loss = 0.153
-Epoch  86 Batch   14/26   train_loss = 0.163
-Epoch  87 Batch   13/26   train_loss = 0.135
-Epoch  88 Batch   12/26   train_loss = 0.147
-Epoch  89 Batch   11/26   train_loss = 0.170
-Epoch  90 Batch   10/26   train_loss = 0.170
-Epoch  91 Batch    9/26   train_loss = 0.152
-Epoch  92 Batch    8/26   train_loss = 0.156
-Epoch  93 Batch    7/26   train_loss = 0.166
-Epoch  94 Batch    6/26   train_loss = 0.155
-Epoch  95 Batch    5/26   train_loss = 0.146
-Epoch  96 Batch    4/26   train_loss = 0.148
-Epoch  97 Batch    3/26   train_loss = 0.160
-Epoch  98 Batch    2/26   train_loss = 0.169
-Epoch  99 Batch    1/26   train_loss = 0.793
+<pre>Epoch   0 Batch    0/17   train_loss = 8.830
+Epoch   1 Batch    8/17   train_loss = 4.917
+Epoch   2 Batch   16/17   train_loss = 4.220
+Epoch   4 Batch    7/17   train_loss = 3.650
+Epoch   5 Batch   15/17   train_loss = 3.080
+Epoch   7 Batch    6/17   train_loss = 2.731
+Epoch   8 Batch   14/17   train_loss = 2.296
+Epoch  10 Batch    5/17   train_loss = 2.104
+Epoch  11 Batch   13/17   train_loss = 1.865
+Epoch  13 Batch    4/17   train_loss = 1.619
+Epoch  14 Batch   12/17   train_loss = 1.520
+Epoch  16 Batch    3/17   train_loss = 1.310
+Epoch  17 Batch   11/17   train_loss = 1.094
+Epoch  19 Batch    2/17   train_loss = 1.056
+Epoch  20 Batch   10/17   train_loss = 0.879
+Epoch  22 Batch    1/17   train_loss = 0.813
+Epoch  23 Batch    9/17   train_loss = 0.755
+Epoch  25 Batch    0/17   train_loss = 0.636
+Epoch  26 Batch    8/17   train_loss = 0.556
+Epoch  27 Batch   16/17   train_loss = 0.520
+Epoch  29 Batch    7/17   train_loss = 0.495
+Epoch  30 Batch   15/17   train_loss = 0.435
+Epoch  32 Batch    6/17   train_loss = 0.375
+Epoch  33 Batch   14/17   train_loss = 0.305
+Epoch  35 Batch    5/17   train_loss = 0.294
+Epoch  36 Batch   13/17   train_loss = 0.229
+Epoch  38 Batch    4/17   train_loss = 0.220
+Epoch  39 Batch   12/17   train_loss = 0.231
+Epoch  41 Batch    3/17   train_loss = 0.210
+Epoch  42 Batch   11/17   train_loss = 0.217
+Epoch  44 Batch    2/17   train_loss = 0.224
+Epoch  45 Batch   10/17   train_loss = 0.208
+Epoch  47 Batch    1/17   train_loss = 0.204
+Epoch  48 Batch    9/17   train_loss = 0.194
+Epoch  50 Batch    0/17   train_loss = 0.172
+Epoch  51 Batch    8/17   train_loss = 0.161
+Epoch  52 Batch   16/17   train_loss = 0.133
+Epoch  54 Batch    7/17   train_loss = 0.140
+Epoch  55 Batch   15/17   train_loss = 0.124
+Epoch  57 Batch    6/17   train_loss = 0.125
+Epoch  58 Batch   14/17   train_loss = 0.113
+Epoch  60 Batch    5/17   train_loss = 0.098
+Epoch  61 Batch   13/17   train_loss = 0.088
+Epoch  63 Batch    4/17   train_loss = 0.089
+Epoch  64 Batch   12/17   train_loss = 0.093
+Epoch  66 Batch    3/17   train_loss = 0.100
+Epoch  67 Batch   11/17   train_loss = 0.093
+Epoch  69 Batch    2/17   train_loss = 0.104
+Epoch  70 Batch   10/17   train_loss = 0.090
+Epoch  72 Batch    1/17   train_loss = 0.095
+Epoch  73 Batch    9/17   train_loss = 0.104
+Epoch  75 Batch    0/17   train_loss = 0.094
+Epoch  76 Batch    8/17   train_loss = 0.104
+Epoch  77 Batch   16/17   train_loss = 0.086
+Epoch  79 Batch    7/17   train_loss = 0.096
+Epoch  80 Batch   15/17   train_loss = 0.083
+Epoch  82 Batch    6/17   train_loss = 0.100
+Epoch  83 Batch   14/17   train_loss = 0.092
+Epoch  85 Batch    5/17   train_loss = 0.086
+Epoch  86 Batch   13/17   train_loss = 0.082
+Epoch  88 Batch    4/17   train_loss = 0.084
+Epoch  89 Batch   12/17   train_loss = 0.087
+Epoch  91 Batch    3/17   train_loss = 0.095
+Epoch  92 Batch   11/17   train_loss = 0.089
+Epoch  94 Batch    2/17   train_loss = 0.100
+Epoch  95 Batch   10/17   train_loss = 0.085
+Epoch  97 Batch    1/17   train_loss = 0.093
+Epoch  98 Batch    9/17   train_loss = 0.101
 Model Trained and Saved
 </pre>
 </div>
@@ -13857,7 +12801,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13883,7 +12827,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13922,7 +12866,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_tensors</span><span class="p">(</span><span class="n">loaded_graph</span><span class="p">):</span>
@@ -13978,7 +12922,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pick_word</span><span class="p">(</span><span class="n">probabilities</span><span class="p">,</span> <span class="n">int_to_vocab</span><span class="p">):</span>
@@ -14030,7 +12974,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gen_length</span> <span class="o">=</span> <span class="mi">200</span>
@@ -14091,19 +13035,20 @@ Model Trained and Saved
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>moe_szyslak:(to ask) wait, wait, wait, wait, wait, wait, wait, wait, wait, wait, homer&#39;s tryin&#39; to buy you a beer.
-homer_simpson:(excited) guys, you wanna take it.
-homer_simpson:(excited) guys, if derek jeter married mariah. they&#39;re my i have written to see paris, has anybody.(grabs glass for the coast young archaeologist...(third head) kill!
-carl: quit playing dumb...
-
-
-homer_simpson:(runs in) uh, bee o&#39;problem. that&#39;s a beautiful too hot, absolut didn&#39;t.
-moe_szyslak: and i&#39;m magnanimous in victory.
-moe_szyslak: okay, chug-monkeys. what beverage, use my dad, i need this guy i do that thing.
-barney_gumble: from the past of my poor i&#39;m gonna pay for my annual holiday tradition... attempting to say to say.
-moe_szyslak: and now, you heard the operation.
-homer_simpson: i&#39;ve had a place this guy who shouldn&#39;t have a don rickles about!
-lenny_leonard:(
+<pre>moe_szyslak:(into phone) gotcha ya down for forty bucks. good luck your eminence.
+moe_szyslak: sorry, homer, you can&#39;t take any more of my money.
+moe_szyslak: i was just doin&#39; what comes naturally to me-- being mean to animals.
+man_with_crazy_beard:(sings) he&#39;s the one guy who shouldn&#39;t have.
+homer_simpson: that was me.
+moe_szyslak: now, no matter how much he hits you, you don&#39;t do nothin&#39;, okay? you don&#39;t do nothin&#39;, okay? you don&#39;t you give me to buy the recipe.
+moe_szyslak: no dice. the&#34; flaming moe&#34; is not for sale.
+homer_simpson:(chuckles) hey, people may not love homer simpson, but they love that.
+lenny_leonard: hey, homer. if you&#39;re havin&#39; in her i saw... and the crowds went wild.
+barney_gumble: yoo hoo!
+homer_simpson:(sings) so goodbye...
+chief_wiggum:(sings) oh, god, i hate my life.
+moe_szyslak: hey, homer.
+homer_simpson: you dirty teen.
 </pre>
 </div>
 </div>
